@@ -1,0 +1,23 @@
+/* Add this in your CSS file or style tag */
+/* /* @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'); */
+
+footer a:hover {
+    color: #fff !important;
+    transition: all 0.3s ease;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: rgba(255,255,255,0.2);
+    transform: translateY(-3px);
+} 
