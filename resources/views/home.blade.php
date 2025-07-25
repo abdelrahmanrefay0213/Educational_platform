@@ -396,8 +396,8 @@
             <div class="row">
                 <!-- About -->
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <h5 class="fw-bold">منصة ذاكر التاريخ</h5>
-                    <p class="text-muted mt-3">
+                    <h5 class="fw-bold">منصة ذاكر تاريخ اونلاين</h5>
+                    <p class="text-white mt-3">
                         منصة تعليمية متخصصة في تدريس التاريخ للمراحل الثانوية تحت إشراف د/سماح حافظ، نهدف إلى تبسيط المادة العلمية وتقديمها بطريقة تفاعلية ممتعة.
                     </p>
                     <div class="social-icons mt-4">
@@ -413,18 +413,18 @@
                 <div class="col-lg-2 col-md-6 mb-4">
                     <h5 class="fw-bold">روابط سريعة</h5>
                     <ul class="list-unstyled mt-3">
-                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none hover-primary">الرئيسية</a></li>
-                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none hover-primary">الدروس</a></li>
-                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none hover-primary">الاختبارات</a></li>
-                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none hover-primary">المدرسون</a></li>
-                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none hover-primary">اتصل بنا</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-primary">الرئيسية</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-primary">الدروس</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-primary">الاختبارات</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-primary">المدرسون</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-primary">اتصل بنا</a></li>
                     </ul>
                 </div>
                 
                 <!-- Contact -->
                 <div class="col-lg-3 col-md-6 mb-4">
                     <h5 class="fw-bold">تواصل معنا</h5>
-                    <ul class="list-unstyled text-muted mt-3">
+                    <ul class="list-unstyled text-white mt-3">
                         <li class="mb-3 d-flex align-items-start">
                             <i class="fas fa-map-marker-alt mt-1 me-2"></i>
                             <span>123 شارع الجامعة، الرياض، المملكة العربية السعودية</span>
@@ -443,7 +443,7 @@
                 <!-- Newsletter -->
                 <div class="col-lg-3 col-md-6 mb-4">
                     <h5 class="fw-bold">النشرة البريدية</h5>
-                    <p class="text-muted mt-3">
+                    <p class="text-white mt-3">
                         اشترك ليصلك كل جديد عن المنصة والدروس والعروض الخاصة
                     </p>
                     <div class="input-group mb-3 mt-4">

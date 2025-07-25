@@ -8,3 +8,7 @@ Route::get('/', function () {
 });
 
 Route::get('/home', [Homecontroller::class, 'index'])->name('home');
+
+Route::get('/home/login', [Homecontroller::class, 'login'])->name('login');
+
+Route::get('/home/create_account', [Homecontroller::class, 'createAccount'])->name('create_account');
