@@ -209,34 +209,18 @@
                 <div class="d-flex flex-row-reverse justify-content-between align-items-center w-100">
                     <!-- Buttons -->
                     <div class="d-flex align-items-center">
-                        <button class="btn btn-primary ms-3 me-2" type="button">تسجيل الدخول</button>
-                        <button class="btn btn-outline-primary" type="button">إنشاء حساب</button>
+                        <a href="{{ route('login') }}" class="btn btn-primary ms-3 me-2" type="button">تسجيل الدخول</a>
+                        <a href="{{ route('create_account') }}" class="btn btn-outline-primary" type="button">إنشاء حساب</a>
                     </div>
                     
                     <!-- Brand and Navigation -->
                     <div class="d-flex align-items-center">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="{{ route('home') }}">
                             <span class="text-primary">ذاكر <span class="text-dark">تاريخ</span> اونلاين</span>
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav me-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">الدروس</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">الاختبارات</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">اتصل بنا</a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -258,7 +242,7 @@
                     <p class="lead mb-4">
                         منصة تعليمية متخصصة في تدريس التاريخ المرحلة الثانوية بطريقة سهلة وممتعة. نقدم محتوى تعليمي متنوع يشمل فيديوهات شرح، ملخصات، خرائط ذهنية، واختبارات تفاعلية لضمان أفضل فهم للمادة.
                     </p>
-                    <button class="btn btn-primary btn-lg">ابدأ التعلم الآن</button>
+                    <a href="{{ route('login') }}" class="btn btn-primary btn-lg">ابدأ التعلم الآن</a>
                 </div>
             </div>
         </section>
@@ -401,11 +385,11 @@
                         منصة تعليمية متخصصة في تدريس التاريخ للمراحل الثانوية تحت إشراف د/سماح حافظ، نهدف إلى تبسيط المادة العلمية وتقديمها بطريقة تفاعلية ممتعة.
                     </p>
                     <div class="social-icons mt-4">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/groups/393691115855559/user/100000717019113/"><i class="fab fa-facebook-f"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/samahhafez1811/"><i class="fab fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.youtube.com/@drsamahhafez7872"><i class="fab fa-youtube"></i></a>
+                        <a target="_blank" href="https://telegram.org/"><i class="fab fa-telegram"></i></a>
+                        <a target="_blank" href="https://wa.me/201551932203"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 
@@ -413,11 +397,9 @@
                 <div class="col-lg-2 col-md-6 mb-4">
                     <h5 class="fw-bold">روابط سريعة</h5>
                     <ul class="list-unstyled mt-3">
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-primary">الرئيسية</a></li>
                         <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-primary">الدروس</a></li>
                         <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-primary">الاختبارات</a></li>
                         <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-primary">المدرسون</a></li>
-                        <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-primary">اتصل بنا</a></li>
                     </ul>
                 </div>
                 
@@ -425,17 +407,24 @@
                 <div class="col-lg-3 col-md-6 mb-4">
                     <h5 class="fw-bold">تواصل معنا</h5>
                     <ul class="list-unstyled text-white mt-3">
-                        <li class="mb-3 d-flex align-items-start">
+
+                        {{-- location --}}
+                        {{-- <li class="mb-3 d-flex align-items-start">
                             <i class="fas fa-map-marker-alt mt-1 me-2"></i>
                             <span>123 شارع الجامعة، الرياض، المملكة العربية السعودية</span>
-                        </li>
+                        </li>  --}}
+
                         <li class="mb-3 d-flex align-items-center">
                             <i class="fas fa-phone me-2"></i>
-                            <span>+966 12 345 6789</span>
+                            <span>01280929444</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center">
+                            <i class="fab fa-whatsapp me-2"></i>
+                            <a href="https://wa.me/201551932203" class="text-white text-decoration-none" target="_blank">01551932203</a>
                         </li>
                         <li class="mb-3 d-flex align-items-center">
                             <i class="fas fa-envelope me-2"></i>
-                            <span>info@history-platform.edu</span>
+                            <span><samah@gmail class="com">samah@gmail.com</samah@gmail></span>
                         </li>
                     </ul>
                 </div>

@@ -19,4 +19,8 @@ class Homecontroller extends Controller
     {
         return view('create_account');
     }
+    public function user_dashboard()
+    {
+        return view('user_dashboard');
+    }
 }

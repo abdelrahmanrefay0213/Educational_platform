@@ -179,7 +179,7 @@
         </div>
         
         <div class="footer-links">
-            <p>ليس لديك حساب؟ <a href="#">إنشاء حساب جديد</a></p>
+            <p>ليس لديك حساب؟ <a href="{{ route('create_account') }}">إنشاء حساب جديد</a></p>
             <p class="text-muted mt-2">جميع الحقوق محفوظة &copy; <span id="year"></span></p>
         </div>
     </div>
