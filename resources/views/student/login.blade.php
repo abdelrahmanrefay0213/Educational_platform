@@ -144,7 +144,8 @@
                 <h4>تسجيل الدخول إلى النظام</h4>
             </div>
             <div class="login-body">
-                <form action="#" method="POST">
+                <form action="{{ route('login') }}" method="POST">
+                    @csrf
                     <div class="mb-4">
                         <label for="email" class="form-label">البريد الإلكتروني</label>
                         <div class="input-group">
@@ -170,7 +171,7 @@
                     </div>
                     
                     <button type="submit" class="btn btn-login w-100 mb-3">دخول</button>
-                    
+
                     <div class="text-center mt-3">
                         <a href="#" class="text-muted">نسيت كلمة المرور؟</a>
                     </div>
