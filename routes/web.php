@@ -7,10 +7,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::get('/home', [StudentController::class, 'index'])->name('home');
-
-Route::post('/login', [StudentController::class, 'login'])->name('login');
-
+Route::get('/login', [StudentController::class, 'login'])->name('login');
 Route::get('/create', [StudentController::class, 'createAccount'])->name('create_account');
 
 Route::get('/user_dashboard', [StudentController::class, 'user_dashboard'])->name('user_dashboard');

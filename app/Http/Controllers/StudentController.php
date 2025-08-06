@@ -8,7 +8,8 @@ class StudentController extends Controller
 {
     public function index()
     {
-        return view('student.home');
+        $name = "Student";
+        return view('student.home', ['name' => $name]);
     }
 
     public function login()
