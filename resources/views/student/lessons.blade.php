@@ -215,6 +215,12 @@
             transform: scale(1.1);
             background-color: #2980b9;
         }
+@media (min-width: 992px) {
+    .row > .col-lg-4:nth-child(n+4) {
+        margin-top: 32px; /* Adjust space as needed */
+    }
+}
+
     </style>
 </head>
 <body>
@@ -229,9 +235,9 @@
                             {{-- <img src="https://via.placeholder.com/40" alt="صورة المستخدم" class="user-avatar"> --}}
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownUser">
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>الملف الشخصي</a></li>
+                            {{-- <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>الملف الشخصي</a></li>
                             <li><a class="dropdown-item" href="#"><i class="fas fa-cog me-2"></i>الإعدادات</a></li>
-                            <li><hr class="dropdown-divider"></li>
+                            <li><hr class="dropdown-divider"></li> --}}
                             <li><a class="dropdown-item" href="{{ route('home') }}"><i class="fas fa-sign-out-alt me-2"></i>تسجيل الخروج</a></li>
                         </ul>
                     </div>
@@ -257,10 +263,10 @@
                         <a class="nav-link active" href="{{ route('lessons') }}"><i class="fas fa-book me-1"></i> الدروس</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-chart-bar me-1"></i> التقدم</a>
+                        <a class="nav-link" href="{{route('score')}}"><i class="fas fa-chart-bar me-1"></i> التقدم</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-question-circle me-1"></i> الاختبارات</a>
+                        <a class="nav-link" href="{{route('test_bank')}}"><i class="fas fa-question-circle me-1"></i> بنك الاسئلة</a>
                     </li>
                 </ul>
             </div>
@@ -280,7 +286,7 @@
             </div>
         </div>
         
-        <div class="filter-container">
+        {{-- <div class="filter-container">
             <h5 class="filter-title"><i class="fas fa-filter me-2"></i>تصفية الدروس</h5>
             <div class="row">
                 <div class="col-md-3 mb-3">
@@ -314,7 +320,7 @@
                     <button class="btn btn-outline-primary w-100">تطبيق الفلتر</button>
                 </div>
             </div>
-        </div>
+        </div> --}}
         
         <div class="row">
             <!-- Lesson 1 -->
@@ -323,7 +329,7 @@
                     <img src="https://source.unsplash.com/random/600x400?egypt" class="card-img-top" alt="الحضارة المصرية القديمة">
                     <div class="card-body">
                         <div class="lesson-meta">
-                            <span class="lesson-badge badge-beginner">مبتدئ</span>
+                            {{-- <span class="lesson-badge badge-beginner">مبتدئ</span> --}}
                             <span class="lesson-duration"><i class="far fa-clock me-1"></i> 2 ساعة</span>
                         </div>
                         <h5 class="card-title">الحضارة المصرية القديمة</h5>
@@ -345,7 +351,7 @@
                     <img src="https://source.unsplash.com/random/600x400?islamic" class="card-img-top" alt="الفتوحات الإسلامية">
                     <div class="card-body">
                         <div class="lesson-meta">
-                            <span class="lesson-badge badge-intermediate">متوسط</span>
+                            {{-- <span class="lesson-badge badge-intermediate">متوسط</span> --}}
                             <span class="lesson-duration"><i class="far fa-clock me-1"></i> 3 ساعات</span>
                         </div>
                         <h5 class="card-title">الفتوحات الإسلامية</h5>
@@ -367,7 +373,7 @@
                     <img src="https://source.unsplash.com/random/600x400?umayyad" class="card-img-top" alt="الدولة الأموية">
                     <div class="card-body">
                         <div class="lesson-meta">
-                            <span class="lesson-badge badge-intermediate">متوسط</span>
+                            {{-- <span class="lesson-badge badge-intermediate">متوسط</span> --}}
                             <span class="lesson-duration"><i class="far fa-clock me-1"></i> 4 ساعات</span>
                         </div>
                         <h5 class="card-title">الدولة الأموية</h5>
@@ -389,7 +395,7 @@
                     <img src="https://source.unsplash.com/random/600x400?abbasid" class="card-img-top" alt="الدولة العباسية">
                     <div class="card-body">
                         <div class="lesson-meta">
-                            <span class="lesson-badge badge-intermediate">متوسط</span>
+                            {{-- <span class="lesson-badge badge-intermediate">متوسط</span> --}}
                             <span class="lesson-duration"><i class="far fa-clock me-1"></i> 5 ساعات</span>
                         </div>
                         <h5 class="card-title">الدولة العباسية</h5>
@@ -411,7 +417,7 @@
                     <img src="https://source.unsplash.com/random/600x400?ottoman" class="card-img-top" alt="الدولة العثمانية">
                     <div class="card-body">
                         <div class="lesson-meta">
-                            <span class="lesson-badge badge-advanced">متقدم</span>
+                            {{-- <span class="lesson-badge badge-advanced">متقدم</span> --}}
                             <span class="lesson-duration"><i class="far fa-clock me-1"></i> 6 ساعات</span>
                         </div>
                         <h5 class="card-title">الدولة العثمانية</h5>
@@ -433,7 +439,7 @@
                     <img src="https://source.unsplash.com/random/600x400?modern" class="card-img-top" alt="التاريخ الحديث">
                     <div class="card-body">
                         <div class="lesson-meta">
-                            <span class="lesson-badge badge-advanced">متقدم</span>
+                            {{-- <span class="lesson-badge badge-advanced">متقدم</span> --}}
                             <span class="lesson-duration"><i class="far fa-clock me-1"></i> 4 ساعات</span>
                         </div>
                         <h5 class="card-title">التاريخ الحديث</h5>
@@ -466,11 +472,11 @@
     </div>
     
     <!-- Floating Chat Support -->
-    <div class="chat-support">
+    {{-- <div class="chat-support">
         <button class="chat-button">
             <i class="fas fa-headset"></i>
         </button>
-    </div>
+    </div> --}}
 
     <footer class="pt-5 pb-4">
         <div class="container">

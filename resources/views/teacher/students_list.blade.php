@@ -146,7 +146,7 @@
                     <div class="dropdown">
                         <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false" role="button">
                             <span class="ms-2 d-none d-sm-inline">د. سامحة حافظ</span>
-                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="صورة المستخدم" class="user-avatar">
+                            {{-- <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="صورة المستخدم" class="user-avatar"> --}}
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownUser">
                             <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>الملف الشخصي</a></li>

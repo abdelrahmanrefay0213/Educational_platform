@@ -187,10 +187,10 @@
                         </div>
                     </div>
                     
-                    <div class="mb-3 form-check">
+                    {{-- <div class="mb-3 form-check">
                         <input type="checkbox" class="form-check-input" id="terms" required>
                         <label class="form-check-label" for="terms">أوافق على <a href="#">الشروط والأحكام</a></label>
-                    </div>
+                    </div> --}}
                     
                     <button type="submit" class="btn btn-login w-100 mb-3">إنشاء حساب</button>
                 </form>

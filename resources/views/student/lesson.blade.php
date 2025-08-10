@@ -195,12 +195,12 @@
                     <div class="dropdown">
                         <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false" role="button">
                             <span class="me-2 d-none d-sm-inline">أحمد محمد</span>
-                            <img src="https://via.placeholder.com/40" alt="صورة المستخدم" class="user-avatar">
+                            {{-- <img src="https://via.placeholder.com/40" alt="صورة المستخدم" class="user-avatar"> --}}
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownUser">
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>الملف الشخصي</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-cog me-2"></i>الإعدادات</a></li>
-                            <li><hr class="dropdown-divider"></li>
+                            {{-- <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>الملف الشخصي</a></li> --}}
+                            {{-- <li><a class="dropdown-item" href="#"><i class="fas fa-cog me-2"></i>الإعدادات</a></li> --}}
+                            {{-- <li><hr class="dropdown-divider"></li> --}}
                             <li><a class="dropdown-item" href="{{ route('home') }}"><i class="fas fa-sign-out-alt me-2"></i>تسجيل الخروج</a></li>
                         </ul>
                     </div>
@@ -226,10 +226,10 @@
                         <a class="nav-link" href="{{ route('lessons') }}"><i class="fas fa-book me-1"></i> الدروس</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-question-circle me-1"></i> الاختبارات</a>
+                        <a class="nav-link" href="{{ route('score') }}"><i class="fas fa-chart-bar me-1"></i> التقدم</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-chart-bar me-1"></i> التقدم</a>
+                        <a class="nav-link" href="{{ route('test_bank') }}"><i class="fas fa-question-circle me-1"></i> بنك الاسئلة</a>
                     </li>
                 </ul>
             </div>
@@ -253,19 +253,19 @@
                         <div class="me-4">
                             <span class="badge bg-light text-dark"><i class="fas fa-clock me-1"></i> 4 ساعات</span>
                         </div>
-                        <div class="me-4">
+                        {{-- <div class="me-4">
                             <span class="badge bg-light text-dark"><i class="fas fa-layer-group me-1"></i> متوسط</span>
-                        </div>
-                        <div class="progress-container" style="width: 200px;">
+                        </div> --}}
+                        {{-- <div class="progress-container" style="width: 200px;">
                             <div class="progress-bar" style="width: 65%"></div>
                         </div>
-                        <span class="me-2">65% مكتمل</span>
+                        <span class="me-2">65% مكتمل</span> --}}
                     </div>
                 </div>
-                <div class="col-md-4 text-md-start">
+                {{-- <div class="col-md-4 text-md-start">
                     <button class="btn btn-light me-2"><i class="fas fa-bookmark me-1"></i> حفظ</button>
                     <button class="btn btn-outline-light"><i class="fas fa-share-alt me-1"></i> مشاركة</button>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>
@@ -317,7 +317,7 @@
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <div class="d-flex justify-content-between align-items-center mt-2">
+                    {{-- <div class="d-flex justify-content-between align-items-center mt-2">
                         <div>
                             <button class="btn btn-outline-secondary me-2"><i class="fas fa-thumbs-up"></i> أعجبني</button>
                             <button class="btn btn-outline-secondary"><i class="fas fa-thumbs-down"></i> لم يعجبني</button>
@@ -326,7 +326,7 @@
                             <span class="text-muted me-2"><i class="fas fa-eye me-1"></i> 245 مشاهدة</span>
                             <span class="text-muted"><i class="far fa-clock me-1"></i> 32:15 دقيقة</span>
                         </div>
-                    </div>
+                    </div> --}}
                 </section>
                 
                 <!-- Content Section -->

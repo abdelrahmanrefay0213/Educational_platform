@@ -217,11 +217,11 @@
                     <div class="dropdown">
                         <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false" role="button">
                             <span class="me-2 d-none d-sm-inline">أحمد محمد</span>
-                            <img src="https://via.placeholder.com/40" alt="صورة المستخدم" class="user-avatar">
+                            {{-- <img src="https://via.placeholder.com/40" alt="صورة المستخدم" class="user-avatar"> --}}
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownUser">
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>الملف الشخصي</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-cog me-2"></i>الإعدادات</a></li>
+                            {{-- <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>الملف الشخصي</a></li> --}}
+                            {{-- <li><a class="dropdown-item" href="#"><i class="fas fa-cog me-2"></i>الإعدادات</a></li> --}}
                             <li><hr class="dropdown-divider"></li>
                             <li><a class="dropdown-item" href="{{ route('home') }}"><i class="fas fa-sign-out-alt me-2"></i>تسجيل الخروج</a></li>
                         </ul>
@@ -248,10 +248,10 @@
                         <a class="nav-link" href="{{ route('lessons') }}"><i class="fas fa-book me-1"></i> الدروس</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#"><i class="fas fa-question-circle me-1"></i> بنك الأسئلة</a>
+                        <a class="nav-link" href="{{ route('score') }}"><i class="fas fa-chart-bar me-1"></i> التقدم</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-chart-bar me-1"></i> التقدم</a>
+                        <a class="nav-link active" href="{{ route('test_bank') }}"><i class="fas fa-question-circle me-1"></i> بنك الأسئلة</a>
                     </li>
                 </ul>
             </div>
@@ -271,7 +271,7 @@
             </div>
         </div>
         
-        <div class="filter-container">
+        {{-- <div class="filter-container">
             <h5 class="filter-title"><i class="fas fa-filter me-2"></i>تصفية الأسئلة</h5>
             <div class="row">
                 <div class="col-md-3 mb-3">
@@ -306,9 +306,9 @@
                     <button class="btn btn-outline-primary w-100">تطبيق الفلتر</button>
                 </div>
             </div>
-        </div>
+        </div> --}}
         
-        <ul class="nav nav-tabs" id="questionTabs" role="tablist">
+        {{-- <ul class="nav nav-tabs" id="questionTabs" role="tablist">
             <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab">الكل</button>
             </li>
@@ -321,7 +321,7 @@
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="essay-tab" data-bs-toggle="tab" data-bs-target="#essay" type="button" role="tab">مقالي</button>
             </li>
-        </ul>
+        </ul> --}}
         
         <div class="tab-content" id="questionTabsContent">
             <div class="tab-pane fade show active" id="all" role="tabpanel">

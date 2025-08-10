@@ -232,7 +232,7 @@
         <section class="hero-section">
             <div class="row align-items-center">
                 <div class="col-lg-6 text-center">
-                    <img src="http://localhost:8000/images/samah_pic.jpg" class="hero-img w-50" alt="د. سماح حافظ - مدرسة التاريخ">
+                    <img src="{{ asset('samah_pic.jpg') }}" class="hero-img w-50" alt="د. سماح حافظ - مدرسة التاريخ">
                 </div>
                 <div class="col-lg-6">
                     <h1 class="display-4 fw-bold mb-4">
@@ -265,15 +265,15 @@
                             </div>
                             <h5 class="card-title text-center">الصف الأول الثانوي</h5>
                             <div class="text-center">
-                                <a href="#" class="card-link">
+                                <span class="card-link">
                                     <i class="fas fa-book me-2"></i> الفصل الدراسي الأول
-                                </a>
-                                <a href="#" class="card-link">
+                                </span>
+                                <span class="card-link">
                                     <i class="fas fa-book me-2"></i> الفصل الدراسي الثاني
-                                </a>
-                                <a href="#" class="card-link">
+                                </span>
+                                <span class="card-link">
                                     <i class="fas fa-question-circle me-2"></i> نماذج اختبارات
-                                </a>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -288,15 +288,15 @@
                             </div>
                             <h5 class="card-title text-center">الصف الثاني الثانوي</h5>
                             <div class="text-center">
-                                <a href="#" class="card-link">
+                                <span class="card-link">
                                     <i class="fas fa-book me-2"></i> الفصل الدراسي الأول
-                                </a>
-                                <a href="#" class="card-link">
+                                </span>
+                                <span class="card-link">
                                     <i class="fas fa-book me-2"></i> الفصل الدراسي الثاني
-                                </a>
-                                <a href="#" class="card-link">
+                                </span>
+                                <span class="card-link">
                                     <i class="fas fa-question-circle me-2"></i> نماذج اختبارات
-                                </a>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -311,15 +311,15 @@
                             </div>
                             <h5 class="card-title text-center">الصف الثالث الثانوي</h5>
                             <div class="text-center">
-                                <a href="#" class="card-link">
+                                <span class="card-link">
                                     <i class="fas fa-book me-2"></i> الفصل الدراسي الأول
-                                </a>
-                                <a href="#" class="card-link">
+                                </span>
+                                <span class="card-link">
                                     <i class="fas fa-book me-2"></i> الفصل الدراسي الثاني
-                                </a>
-                                <a href="#" class="card-link">
+                                </span>
+                                <span class="card-link">
                                     <i class="fas fa-question-circle me-2"></i> مراجعات نهائية
-                                </a>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -394,14 +394,14 @@
                 </div>
                 
                 <!-- Quick Links -->
-                <div class="col-lg-2 col-md-6 mb-4">
+                {{-- <div class="col-lg-2 col-md-6 mb-4">
                     <h5 class="fw-bold">روابط سريعة</h5>
                     <ul class="list-unstyled mt-3">
                         <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-primary">الدروس</a></li>
                         <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-primary">الاختبارات</a></li>
                         <li class="mb-2"><a href="#" class="text-white text-decoration-none hover-primary">المدرسون</a></li>
                     </ul>
-                </div>
+                </div> --}}
                 
                 <!-- Contact -->
                 <div class="col-lg-3 col-md-6 mb-4">
@@ -436,11 +436,12 @@
                         اشترك ليصلك كل جديد عن المنصة والدروس والعروض الخاصة
                     </p>
                     <div class="input-group mb-3 mt-4">
-                        <input type="email" class="form-control newsletter-input" placeholder="بريدك الإلكتروني">
-                        <button class="btn btn-primary newsletter-btn" type="button">
-                            <i class="fas fa-paper-plane"></i>
+                        <input type="text" id="whatsappMessage" class="form-control newsletter-input" placeholder="للاستفسار او الاشتراك">
+                        <button class="btn btn-success newsletter-btn" type="button" onclick="sendWhatsAppMessage()">
+                            <i class="fab fa-whatsapp"></i>
                         </button>
                     </div>
+
                 </div>
             </div>
             
@@ -473,6 +474,14 @@
                 this.classList.remove('text-primary');
             });
         });
+    </script>
+    <script>
+        function sendWhatsAppMessage() {
+            var message = document.getElementById('whatsappMessage').value;
+            var phone = '201503388998'; // International format for WhatsApp
+            var url = 'https://wa.me/' + phone + '?text=' + encodeURIComponent(message);
+            window.open(url, '_blank');
+        }
     </script>
 </body>
 </html>

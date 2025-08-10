@@ -321,10 +321,10 @@
                             {{-- <img src="https://via.placeholder.com/40" alt="صورة المستخدم" class="user-avatar"> --}}
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownUser">
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>الملف الشخصي</a></li>
-                            <li><a class="dropdown-item" href="#"><i class="fas fa-cog me-2"></i>الإعدادات</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="{{ route('home') }}"><i class="fas fa-sign-out-alt me-2"></i>تسجيل الخروج</a></li>
+                            {{-- <li><a class="dropdown-item" href="#"><i class="fas fa-user me-2"></i>الملف الشخصي</a></li> --}}
+                            {{-- <li><a class="dropdown-item" href="#"><i class="fas fa-cog me-2"></i>الإعدادات</a></li> --}}
+                            {{-- <li><hr class="dropdown-divider"></li> --}}
+                            <li><a class="dropdown-item" href="{{ route('login') }}"><i class="fas fa-sign-out-alt me-2"></i>تسجيل الخروج</a></li>
                         </ul>
                     </div>
                 </div>
@@ -343,24 +343,24 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="{{ route('user_dashboard') }}"><i class="fas fa-home me-1"></i> الرئيسية</a>
+                        <a class="nav-link active" href="{{route('user_dashboard')}}"><i class="fas fa-home me-1"></i> الرئيسية</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('lessons') }}"><i class="fas fa-book me-1"></i> الدروس</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-chart-bar me-1"></i> التقدم</a>
+                        <a class="nav-link" href="{{route('score')}}"><i class="fas fa-chart-bar me-1"></i> التقدم</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-question-circle me-1"></i> الاختبارات</a>
+                        <a class="nav-link" href="{{route('test_bank')}}"><i class="fas fa-question-circle me-1"></i> بنك الاسئلة</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container">
-        <div class="row">
+    <div class="container" style="margin-top: 40px;">
+        {{-- <div class="row">
             <div class="col-md-4">
                 <div class="stat-card card">
                     <div class="card-body text-center">
@@ -402,7 +402,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
         <div class="row mt-4">
             <div class="col-lg-8">
@@ -503,7 +503,7 @@
     </div>
     
     <!-- Floating Chat Support -->
-    <div class="chat-support">
+    {{-- <div class="chat-support">
         <div class="chat-container" id="chatContainer">
             <div class="chat-header">
                 <span>الدعم الفني</span>
@@ -531,7 +531,7 @@
         <button class="chat-button" id="chatButton">
             <i class="fas fa-headset"></i>
         </button>
-    </div>
+    </div> --}}
 
     <footer class="pt-5 pb-4">
         <div class="container">
