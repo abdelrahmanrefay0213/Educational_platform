@@ -17,12 +17,7 @@ return new class extends Migration
             $table->unsignedBigInteger('lesson_id');
             $table->string('file_path');
             
-            // CORRECT timestamp handling (choose ONE option):
-            
-            // Option 1: Laravel's default timestamps (recommended)
-            // $table->timestamps();
-            
-            // OR Option 2: Manual timestamp configuration
+
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
 

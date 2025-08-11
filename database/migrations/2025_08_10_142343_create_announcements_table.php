@@ -19,11 +19,8 @@ return new class extends Migration
             $table->dateTime('publish_date')->useCurrent();
             $table->dateTime('expiration_date')->nullable();
             $table->boolean('is_active')->default(true);
-            
-            // Correct timestamps usage:
-            // $table->timestamps(); // This creates both created_at and updated_at columns
-            
-            // OR if you need custom behavior:
+
+
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });

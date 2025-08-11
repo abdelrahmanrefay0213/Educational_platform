@@ -19,12 +19,6 @@ return new class extends Migration
             $table->integer('lesson_order');
             $table->boolean('is_active')->default(true);
             
-            // CORRECT timestamp declarations (choose ONE of these options):
-            
-            // Option 1: Use Laravel's default timestamps (recommended)
-            // $table->timestamps();
-            
-            // OR Option 2: Manual timestamp configuration
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
         });

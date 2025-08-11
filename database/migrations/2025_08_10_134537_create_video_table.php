@@ -18,12 +18,9 @@ return new class extends Migration
             $table->foreign('lesson_id')->references('lesson_id')->on('lessons')->onDelete('cascade');
             $table->string('video_path');
 
-            // CORRECT timestamp declarations:
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
 
-            // OR even simpler - use Laravel's default timestamps:
-            // $table->timestamps();
         });
     }
 
