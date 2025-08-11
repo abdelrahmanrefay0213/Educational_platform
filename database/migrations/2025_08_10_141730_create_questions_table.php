@@ -20,12 +20,6 @@ return new class extends Migration
             $table->text('correct_answer');
             $table->text('explanation')->nullable();
             
-            // CORRECT timestamp handling (choose ONE option):
-            
-            // Option 1: Laravel's default timestamps (recommended)
-            // $table->timestamps();
-            
-            // OR Option 2: Manual timestamp configuration
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
 

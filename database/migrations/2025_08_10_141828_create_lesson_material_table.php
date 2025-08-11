@@ -18,12 +18,6 @@ return new class extends Migration
             $table->integer('material_order')->default(0);
             $table->boolean('is_active')->default(true);
             
-            // CORRECT timestamp handling (choose ONE of these options):
-            
-            // Option 1: Laravel's default timestamps (recommended)
-            // $table->timestamps();
-            
-            // OR Option 2: Manual timestamp configuration
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
 

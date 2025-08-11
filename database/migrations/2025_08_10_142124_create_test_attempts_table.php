@@ -14,33 +14,19 @@ return new class extends Migration
         Schema::create('test_attempts', function (Blueprint $table) {
             $table->id('attempt_id');
             
-            // Foreign keys
             $table->unsignedBigInteger('student_id');
             $table->unsignedBigInteger('test_id');
             
-            // Manual timestamp configuration (Option 2)
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
             
-            // Test attempt tracking
             $table->unsignedInteger('score')->default(0);
             $table->timestamp('start_time')->useCurrent();
             $table->timestamp('end_time')->nullable();
             
-            // Indexes
-            $table->index('student_id');
-            $table->index('test_id');
-            
-            // Foreign key constraints
-            $table->foreign('student_id')
-                  ->references('student_id')
-                  ->on('students')
-                  ->onDelete('cascade');
+            $table->foreign('student_id')->references('student_id')->on('students')->onDelete('cascade');
                   
-            $table->foreign('test_id')
-                  ->references('test_id')
-                  ->on('test_bank')
-                  ->onDelete('cascade');
+            $table->foreign('test_id')->references('test_id')->on('test_bank')->onDelete('cascade');
         });
     }
 
